@@ -393,7 +393,7 @@ margin-right: 8px;
     --heading-four: 16px;
     --caption-one: 24px;
     --caption-two: 16x;
-    --caption-three: 8px;
+    --caption-three: 14px;
   }
   .menu-btn{
     display: block;
@@ -484,7 +484,7 @@ margin-right: 8px;
     flex-direction: column;
   }
   .home .arrow{
-    
+    bottom: 80px;
     left: 50%;
   }
   .about .arrow , .projects .arrow{
