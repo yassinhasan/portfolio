@@ -402,9 +402,8 @@ margin-right: 8px;
   .inner-links{
     position: absolute;
     box-shadow: 0 8px 16px #b3b3b3;
-    padding: 8px 16px;
-    right: 10px;
-    width: 180px;
+    right: 0px;
+    width: 192px;
     flex-direction: column;
     text-align: center;
     display: none;
@@ -413,15 +412,25 @@ margin-right: 8px;
   .burger{
     cursor: pointer;
      transition: all 0.3s ease-in-out;
+     font-size: 24px;
   }
-  .menu-btn:hover > .inner-links{
+  .menu-btn .inner-links.show{
     display: flex;
   }
-  .menu-btn:hover .burger{
+  .menu-btn.show{
     rotate: 90deg
   }
-  nav .links a {
+  nav .outer-links a {
     margin: 8px;
+  }
+  nav .inner-links a {
+    margin: 0;
+    padding: 8px;
+    transition: all 0.5s ease-in-out;
+  }
+  nav .inner-links a:hover {
+      background-color: var(--primary-color);
+      color: var(--theme-color);
   }
   .outer-links{
     display: none
@@ -484,7 +493,7 @@ margin-right: 8px;
     flex-direction: column;
   }
   .home .arrow{
-    bottom: 80px;
+    bottom: 100px;
     left: 50%;
   }
   .about .arrow , .projects .arrow{
