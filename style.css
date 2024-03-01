@@ -390,10 +390,10 @@ margin-right: 8px;
     --heading-one: 32px;
     --heading-two: 24px;
     --heading-three: 16px;
-    --heading-four: 8px;
-    --caption-one: 16px;
-    --caption-two: 8px;
-    --caption-three: 4px;
+    --heading-four: 16px;
+    --caption-one: 24px;
+    --caption-two: 16x;
+    --caption-three: 8px;
   }
   .menu-btn{
     display: block;
@@ -446,7 +446,7 @@ margin-right: 8px;
     width: 100%
   }
   .about ,.projects{
-    margin-top: 24px;
+    margin-top: 80px;
     height: auto
   }
   .projects{
@@ -483,11 +483,41 @@ margin-right: 8px;
  
     flex-direction: column;
   }
+  .home .arrow{
+    
+    left: 50%;
+  }
+  .about .arrow , .projects .arrow{
 
+    display: none;
+  }
+  .contact {
+    height: auto;
+    margin-top: 80px;
+  }
+  .upper,.footer{
+    height: auto;
+    
+  }
+  .upper{
+    margin-bottom: 80px;
+  }
 }
+
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  :root{
+    --container-margin: 24px;;
+    --heading-one: 32px;
+    --heading-two: 16px;
+    --heading-three: 16px;
+    --heading-four: 16px;
+    --caption-one: 24px;
+    --caption-two: 16x;
+    --caption-three: 8px;
+  }
   .about ,.projects{
     margin-top: 24px
   }
@@ -528,12 +558,12 @@ margin-right: 8px;
   :root{
     --container-margin: 24px;;
     --heading-one: 32px;
-    --heading-two: 16px;
+    --heading-two: 24px;
     --heading-three: 16px;
-    --heading-four: 8px;
+    --heading-four: 16px;
     --caption-one: 16px;
-    --caption-two: 8px;
-    --caption-three: 4px;
+    --caption-two: 16px;
+    --caption-three: 8px;
   }
 }
 
