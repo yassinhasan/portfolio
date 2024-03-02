@@ -115,6 +115,18 @@ nav{
 nav .logo h1 .color-letter{
   color: var(--accent-color);
 }
+.right-links{
+  display: flex;
+  align-items: center;
+}
+
+.right-links .fa-moon
+{
+  cursor: pointer;
+  font-size: var(--heading-two);
+  margin-right: 16px;
+  color: var(--primary-color);
+}
 nav .links a{
   text-decoration: none;
   color:  var(--primary-color);
@@ -190,6 +202,7 @@ nav .links a{
   cursor: pointer;
    color: var(--accent-color);
 }
+
 @keyframes arrow
 {
   0%{
@@ -409,7 +422,7 @@ flex-wrap: wrap;
   }
   .inner-links{
     position: absolute;
-    box-shadow: 0 8px 16px #b3b3b3;
+    box-shadow: 10px 10px var(--accent-color);
     right: 0px;
     width: 192px;
     flex-direction: column;
@@ -421,7 +434,8 @@ flex-wrap: wrap;
   .burger{
     cursor: pointer;
      transition: all 0.3s ease-in-out;
-     font-size: 24px;
+     font-size: var(--heading-two);
+     color: var(--primary-color);
   }
   .menu-btn .inner-links.show{
     display: flex;
