@@ -24,7 +24,7 @@ fa_moon.addEventListener("click",()=>{
         localStorage.setItem("light_theme","light")
     }
     document.body.classList.toggle("light");
-    console.log(localStorage.getItem("light_theme"));
+  
 })
 
 

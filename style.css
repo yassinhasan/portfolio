@@ -15,8 +15,8 @@ html,body {
   --nav-height: 80px;
   --container-margin: 120px;
   --heading-one: 48px;
-  --heading-two: 32px;
-  --heading-three: 24px;
+  --heading-two: 24px;
+  --heading-three: 20px;
   --heading-four: 16px;
   --caption-one: 24px;
   --caption-two: 16px;
@@ -54,7 +54,7 @@ body.light{
 {
   font-size: var(--heading-two);
   color: var(--primary-color);
-  font-weight: 500;
+  font-weight: 400;
 }
 .heading-3
 {
@@ -66,6 +66,7 @@ body.light{
 {
   font-size: var(--heading-four);
   color: var(--primary-color);
+  font-weight: 300;
 }
 .caption-1{
   font-size: var(--caption-one);
@@ -516,7 +517,7 @@ flex-wrap: wrap;
     flex-direction: column;
   }
   .home .arrow{
-    bottom: 60px;
+    bottom: 64px;
     left: 50%;
   }
   .about .arrow , .projects .arrow{
@@ -543,12 +544,12 @@ flex-wrap: wrap;
   :root{
     --container-margin: 24px;;
     --heading-one: 32px;
-    --heading-two: 16px;
+    --heading-two: 20px;
     --heading-three: 16px;
-    --heading-four: 16px;
-    --caption-one: 24px;
+    --heading-four: 14px;
+    --caption-one: 18px;
     --caption-two: 16x;
-    --caption-three: 8px;
+    --caption-three: 14px;
   }
   .about ,.projects{
     margin-top: 24px
@@ -588,15 +589,16 @@ flex-wrap: wrap;
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   :root{
-    --container-margin: 24px;;
+    --container-margin: 32px;;
     --heading-one: 32px;
-    --heading-two: 24px;
+    --heading-two: 20px;
     --heading-three: 16px;
-    --heading-four: 16px;
-    --caption-one: 16px;
+    --heading-four: 14px;
+    --caption-one: 18px;
     --caption-two: 16px;
-    --caption-three: 8px;
+    --caption-three: 14px;
   }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -604,13 +606,13 @@ flex-wrap: wrap;
   :root{
     --nav-height: 80px;
     --container-margin: 64px;
-    --heading-one: 48px;
-    --heading-two: 32px;
-    --heading-three: 24px;
-    --heading-four: 16px;
-    --caption-one: 24px;
-    --caption-two: 16px;
-    --caption-three: 8px;
+    --heading-one: 32px;
+    --heading-two: 22px;
+    --heading-three: 20px;
+    --heading-four: 18px;
+    --caption-one: 20px;
+    --caption-two: 18px;
+    --caption-three: 16px;
   }
   .projects{
     width: 100%;
@@ -666,12 +668,14 @@ flex-wrap: wrap;
   :root{
     --nav-height: 120px;
     --container-margin: 64px;
-    --heading-one: 48px;
-    --heading-two: 32px;
-    --heading-three: 24px;
-    --heading-four: 16px;
-    --caption-one: 24px;
-    --caption-two: 16px;
-    --caption-three: 14px;
+    --nav-height: 80px;
+    --container-margin: 64px;
+    --heading-one: 32px;
+    --heading-two: 24px;
+    --heading-three: 22px;
+    --heading-four: 20px;
+    --caption-one: 22px;
+    --caption-two: 20px;
+    --caption-three: 18px;
   }
 }
