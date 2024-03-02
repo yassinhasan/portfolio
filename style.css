@@ -20,7 +20,7 @@ html,body {
   --heading-four: 16px;
   --caption-one: 24px;
   --caption-two: 16px;
-  --caption-three: 8px;
+  --caption-three: 14px;
 }
 
 body{
@@ -54,11 +54,13 @@ body.light{
 {
   font-size: var(--heading-two);
   color: var(--primary-color);
+  font-weight: 500;
 }
 .heading-3
 {
   font-size: var(--heading-three);
   color: var(--primary-color);
+  font-weight: 400;
 }
 .heading-4
 {
@@ -110,7 +112,7 @@ nav{
   position: relative;
   z-index: 100;
 }
-nav .logo h1{
+nav .logo h1 .color-letter{
   color: var(--accent-color);
 }
 nav .links a{
@@ -153,7 +155,7 @@ nav .links a{
   padding: 8px 16px;
   border: none;
   border-radius: 16px;
-
+  text-decoration: none;
   cursor: pointer;
    color: var(--secondary-color);
   margin-top: 8px;
@@ -179,6 +181,7 @@ nav .links a{
   position: absolute;
   bottom: 50px;
   right: 16px;
+  width: fit-content;
   animation-name: arrow;
   animation-duration: .8s;
   animation-iteration-count: infinite;
@@ -245,10 +248,11 @@ padding: 8px;
 display: flex;
 justify-content: space-between;
 color: var(--secondary-color);
-  flex-wrap: wrap;
+flex-wrap: wrap;
+
 }
-.experience .details .frontend .langs .lang,.experience .details .backend .langs .lang{
-  margin: 8px 16px;
+.experience .details .frontend .langs .lang,.experience .details .backend .langs .lang ,.education .details .langs .lang{
+  margin: 16px 16px;
 }
 /* education */
 .about .box .education{
@@ -309,20 +313,22 @@ color: var(--secondary-color);
 {
   margin: 16px 0;
 }
-.button-wrapper {
+.button-wraper{
     display: flex;
     justify-content: center;
 }
-.button-wrapper button
+.projects .button-wrapper a
 {
   margin-right: 16px;
-  outline: none;
   border-radius: 16px;
   border: 1px solid var(--primary-color);
   padding: 8px 16px;
   transition: all 0.5s ease-in-out;;
+  text-decoration: none;
+  color: var(--primary-color);
+  cursor: pointer;
 }
-.button-wrapper button:hover
+.projects .button-wrapper a:hover
 {
   background-color: var(--primary-color);
   color: var(--theme-color);
@@ -349,18 +355,20 @@ color: var(--secondary-color);
     border-radius: 16px;
     border: 1px dotted var(--primary-color);
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     padding: 16px;
   margin-top: 16px;
     justify-content: space-between;
+}
+.email-wraper a {
+  margin: 0 0 16px 0;
 }
 .email-link,.face-link{
   margin-right: 24px;
   color: var(--primary-color);
 }
 .email-link > i,.face-link > i{
-  
-margin-right: 8px;
+  margin-right: 8px;
 }
 
 .footer{
@@ -393,7 +401,7 @@ margin-right: 8px;
     --heading-four: 16px;
     --caption-one: 24px;
     --caption-two: 16x;
-    --caption-three: 14px;
+    --caption-three: 12px;
   }
   .menu-btn{
     display: block;
@@ -406,6 +414,7 @@ margin-right: 8px;
     width: 192px;
     flex-direction: column;
     text-align: center;
+    background: var(--theme-color);
     display: none;
     transition: all 0.3s ease-in-out;
   }
@@ -493,7 +502,7 @@ margin-right: 8px;
     flex-direction: column;
   }
   .home .arrow{
-    bottom: 100px;
+    bottom: 60px;
     left: 50%;
   }
   .about .arrow , .projects .arrow{
@@ -556,7 +565,7 @@ margin-right: 8px;
   .projects .card .button-wrapper {
     flex-direction: column;
   }
-  .button-wrapper button {
+  .projects  .button-wrapper button {
     width: fit-content;
     margin: 8px auto;
   }
@@ -649,6 +658,6 @@ margin-right: 8px;
     --heading-four: 16px;
     --caption-one: 24px;
     --caption-two: 16px;
-    --caption-three: 8px;
+    --caption-three: 14px;
   }
 }
