@@ -16,11 +16,14 @@ html,body {
   --container-margin: 120px;
   --heading-one: 48px;
   --heading-two: 24px;
-  --heading-three: 20px;
+  --heading-three: 18px;
   --heading-four: 16px;
+  --heading-five: 16px;
   --caption-one: 24px;
   --caption-two: 16px;
   --caption-three: 14px;
+
+
 }
 
 body{
@@ -124,7 +127,7 @@ nav .logo h1 .color-letter{
 .right-links .fa-moon
 {
   cursor: pointer;
-  font-size: var(--heading-two);
+  font-size: var(--heading-three);
   margin-right: 16px;
   color: var(--primary-color);
 }
@@ -162,7 +165,6 @@ nav .links a{
 }
 .name-area .title {
    color: var(--secondary-color);
-   margin-top: 8px;
 }
 .left-btn,.right-btn {
   padding: 8px 16px;
@@ -432,6 +434,11 @@ flex-wrap: wrap;
     display: none;
     transition: all 0.3s ease-in-out;
   }
+  .right-links .fa-moon
+{
+  cursor: pointer;
+  font-size: var(--heading-three);
+}
   .burger{
     cursor: pointer;
      transition: all 0.3s ease-in-out;
@@ -608,11 +615,11 @@ flex-wrap: wrap;
     --container-margin: 64px;
     --heading-one: 32px;
     --heading-two: 22px;
-    --heading-three: 20px;
-    --heading-four: 18px;
-    --caption-one: 20px;
-    --caption-two: 18px;
-    --caption-three: 16px;
+    --heading-three: 18px;
+    --heading-four: 16px;
+    --caption-one: 18px;
+    --caption-two: 16px;
+    --caption-three: 14px;
   }
   .projects{
     width: 100%;
@@ -672,10 +679,13 @@ flex-wrap: wrap;
     --container-margin: 64px;
     --heading-one: 32px;
     --heading-two: 24px;
-    --heading-three: 22px;
-    --heading-four: 20px;
+    --heading-three: 14px;
+    --heading-four: 14px;
+    --heading-five: 14px;
+
     --caption-one: 22px;
     --caption-two: 20px;
-    --caption-three: 18px;
+    --caption-three: 14px;
+    --caption-four: 14px;
   }
 }
