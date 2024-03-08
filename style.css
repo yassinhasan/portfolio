@@ -723,6 +723,9 @@ flex-wrap: wrap;
       width: 100%;
       padding: 16px;
       justify-content: center;
+     margin-bottom: 16px;
+  }
+  .projects-wrapper > div{
     margin-bottom: 16px;
   }
   .projects .prj-img {
